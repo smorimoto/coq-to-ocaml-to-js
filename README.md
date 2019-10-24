@@ -3,11 +3,11 @@
 ## Prerequirements
 
 - Make sure you have the required dependencies installed:
-  - OCaml version 4.08.1
-  - Coq version 8.10.0
-  - opam version 2.0.5
-  - Node.js version 12.13.0
-  - yarn version 1.19.1
+  - `OCaml`: 4.08.1
+  - `Coq`: 8.10.0
+  - `Opam`: 2.0.5
+  - `Node.js`: 12.13.0
+  - `Yarn`: 1.19.1
 
 ## Overview
 
