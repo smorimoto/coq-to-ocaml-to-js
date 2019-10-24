@@ -11,6 +11,7 @@ example code!
   - `OCaml`: 4.08.1
   - `Coq`: 8.10.0
   - `Opam`: 2.0.5
+  - `Esy`: 0.5.8
   - `Node.js`: 12.13.0
   - `Yarn`: 1.19.1
 
@@ -45,4 +46,31 @@ More Optimized JavaScript Code
 └── ocaml
     ├── sigma.ml
     └── sigma.mli
+```
+
+## Guide
+
+### Install dependencies
+
+```bash
+# Install coq with esy
+esy
+
+# Install node packages with yarn
+yarn
+```
+
+### Build
+
+```bash
+# Cleanup
+yarn clean
+
+# Extracting to OCaml
+cd ocaml
+esy coqc ../coq/*.v
+cd -
+
+# Compiling OCaml to JavaScript
+yarn build
 ```
