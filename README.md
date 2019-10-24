@@ -1,9 +1,9 @@
 # Coq to OCaml to JS
 
-What I've done in this repository is generate safe and fast JavaScript using
-Coq's Extraction and BuckleScript, Rollup, Closure Compiler, and Terser. and I'm
-not used to Coq at all, so don't hesitate to send PR if you can write better
-example code!
+Repository for proof-of-concept using Coq's Extraction, BuckleScript, Rollup,
+Closure Compiler, and Terser to generate safe and fast JavaScript. and I'm not
+used to Coq at all, so don't hesitate to send PR if you can write better example
+code!
 
 ## Prerequirements
 
