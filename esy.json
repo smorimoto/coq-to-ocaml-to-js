@@ -1,0 +1,10 @@
+{
+  "name": "coq-to-ocaml-to-js",
+  "version": "0.1.0",
+  "repository": "https://github.com/imbsky/coq-to-ocaml-to-js",
+  "author": "BSKY <me@bsky.moe>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@opam/coq": "8.10.0"
+  }
+}
