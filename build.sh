@@ -4,7 +4,7 @@ coq() {
   echo "∗ Extracting to OCaml..."
   mkdir -p ocaml
   cd ocaml
-  coqc ../coq/sigma.v
+  coqc ../coq/*.v
 }
 
 bucklescript() {
