@@ -7,12 +7,13 @@
   "private": true,
   "scripts": {
     "size": "bundlesize --config bundlesize.config.json",
+    "coq:clean": "rimraf --glob ocaml/*.{ml,mli}",
     "bsb:clean": "bsb -clean-world",
     "bsb:build": "bsb -make-world",
-    "rollup:clean": "rimraf javascript",
+    "rollup:clean": "rimraf --glob javascript/*.js",
     "rollup:build": "rollup -c",
     "clean": "npm-run-all -p *:clean",
-    "build": "npm-run-all -s clean *:build size"
+    "build": "npm-run-all -s *:build size"
   },
   "devDependencies": {
     "@ampproject/rollup-plugin-closure-compiler": "0.12.0",
