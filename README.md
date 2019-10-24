@@ -53,7 +53,7 @@ More Optimized JavaScript Code
 ### Install dependencies
 
 ```bash
-# Install coq with esy
+# Install opam packages with esy
 esy
 
 # Install node packages with yarn
