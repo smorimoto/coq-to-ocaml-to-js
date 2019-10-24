@@ -1,0 +1,7 @@
+{
+  "name": "coq-to-ocaml-to-js",
+  "version": "0.1.0",
+  "bsc-flags": ["-bs-super-errors", "-bs-no-version-header"],
+  "package-specs": { "module": "es6", "in-source": false },
+  "sources": { "dir": "ocaml", "subdirs": true }
+}
