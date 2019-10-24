@@ -1,9 +1,8 @@
 ##########
 # Project specific
 ##########
+_esy/
 lib/
-javascript/
-ocaml/
 
 ##########
 # Coq
