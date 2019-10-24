@@ -17,8 +17,10 @@
   },
   "devDependencies": {
     "@ampproject/rollup-plugin-closure-compiler": "0.12.0",
+    "@imbsky/rollup-plugin-lebab": "1.0.1",
     "bs-platform": "6.2.1",
     "bundlesize": "0.18.0",
+    "lebab": "3.1.0",
     "npm-run-all": "4.1.5",
     "prettier": "1.18.2",
     "rimraf": "3.0.0",
