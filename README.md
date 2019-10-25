@@ -26,7 +26,7 @@ OCaml Code
   |
   | (Use BuckleScript)
   v
-Optimized Javascript Code
+Optimized JavaScript Code
   |
   | (Use Rollup, Lebab, Terser, Closure Compiler)
   v
