@@ -155,10 +155,10 @@ brotli-size@0.1.0:
     duplexer "^0.1.1"
     iltorb "^2.4.3"
 
-bs-platform@6.2.1:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-6.2.1.tgz#30266c7f23a3b323e1fc9596a9a6eb9f053981b4"
-  integrity sha512-FmQ8kYV52A0Y302qh6o0/J9TO+kHzsjGQnsjrg/ONUYIY/jWzBnt9dCBO6EBnaEKfFJLqk5JrUDCxuihqtTcnw==
+bs-platform@6.2.2-flambda-uniform-array.1:
+  version "6.2.2-flambda-uniform-array.1"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-6.2.2-flambda-uniform-array.1.tgz#8b2e3967c9dc84bb5edae52d3ee210d0c29f4789"
+  integrity sha512-DqtiH0/EcHg6+r0mPGGee1nvXfXq+RMN71Nd1qau0+d+oYAiBPaaQ5VhSyzLUaFbg93Lvquhj6Czl5dwEwBscA==
 
 buffer-from@^1.0.0:
   version "1.1.1"
