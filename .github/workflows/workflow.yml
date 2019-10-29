@@ -19,22 +19,22 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install yarn
+      - name: Install yarn and esy
         run: npm install -g yarn esy
 
-      - name: Install node packages
+      - name: Install Node.js Packages
         run: yarn install --frozen-lockfile
 
-      - name: Install and build ocaml packages
+      - name: Install and Build OCaml Packages
         run: esy
 
-      - name: Cleanup everything
+      - name: Cleanup Everything
         run: yarn clean
 
       - name: Extracting to OCaml
         run: |
           cd ocaml
-          esy coqc ./coq/*.v
+          esy coqc ../coq/*.v
 
       - name: Compiling OCaml to JavaScript
         run: yarn build
