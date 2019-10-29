@@ -1,5 +1,10 @@
 # Coq to OCaml to JS
 
+[![Main workflow](https://github.com/imbsky/coq-to-ocaml-to-js/workflows/Main%20workflow/badge.svg)](https://github.com/imbsky/coq-to-ocaml-to-js/actions)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![License](https://img.shields.io/github/license/asdf-community/asdf-direnv?color=brightgreen)](https://github.com/asdf-community/asdf-direnv/blob/master/LICENSE)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=imbsky/coq-to-ocaml-to-js)](https://dependabot.com)
+
 This repository is nothing more than a proof of concept using Coq's Extraction,
 BuckleScript, Rollup, Lebab, Terser, and Closure Compiler to generate safe and
 fast JavaScript. and I'm not used to Coq at all, so don't hesitate to send PR if
