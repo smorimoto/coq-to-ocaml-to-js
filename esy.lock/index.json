@@ -22,7 +22,7 @@
       "version": "link-dev:./esy.json",
       "source": { "type": "link-dev", "path": ".", "manifest": "esy.json" },
       "overrides": [],
-      "dependencies": [ "@opam/coq@opam:8.10.0@a0024f16" ],
+      "dependencies": [ "@opam/coq@opam:8.10.0@229b4c9e" ],
       "devDependencies": []
     },
     "@opam/ocamlfind@opam:1.8.1@ff07b0f9": {
@@ -82,8 +82,8 @@
       ],
       "devDependencies": [ "ocaml@4.9.0@d41d8cd9" ]
     },
-    "@opam/coq@opam:8.10.0@a0024f16": {
-      "id": "@opam/coq@opam:8.10.0@a0024f16",
+    "@opam/coq@opam:8.10.0@229b4c9e": {
+      "id": "@opam/coq@opam:8.10.0@229b4c9e",
       "name": "@opam/coq",
       "version": "opam:8.10.0",
       "source": {
