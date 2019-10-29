@@ -49,30 +49,3 @@ More Optimized JavaScript Code
     ├── sigma.ml
     └── sigma.mli
 ```
-
-## Guide
-
-### Install dependencies
-
-```bash
-# Install opam packages with esy
-esy
-
-# Install node packages with yarn
-yarn
-```
-
-### Build
-
-```bash
-# Cleanup
-yarn clean
-
-# Extracting to OCaml
-cd ocaml
-esy coqc ../coq/*.v
-cd -
-
-# Compiling OCaml to JavaScript
-yarn build
-```
