@@ -13,11 +13,11 @@ you can write better example code!
 ## Prerequirements
 
 - Make sure you have the required dependencies installed:
-  - `OCaml`: 4.08.1
+  - `OCaml`: 4.09.0
   - `Coq`: 8.10.0
   - `Opam`: 2.0.5
   - `Esy`: 0.5.8
-  - `Node.js`: 12.13.0
+  - `Node.js`: 13.x.x
   - `Yarn`: 1.19.1
 
 ## Overview
