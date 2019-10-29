@@ -17,7 +17,7 @@ you can write better example code!
   - `Coq`: 8.10.0
   - `Opam`: 2.0.5
   - `Esy`: 0.5.8
-  - `Node.js`: 13.x.x
+  - `Node.js`: 13.0.1
   - `Yarn`: 1.19.1
 
 ## Overview
