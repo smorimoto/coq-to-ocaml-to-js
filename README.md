@@ -6,9 +6,9 @@
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=imbsky/coq-to-ocaml-to-js)](https://dependabot.com)
 
 This repository is nothing more than a proof of concept using Coq's Extraction,
-BuckleScript, Rollup, Lebab, Terser, and Closure Compiler to generate safe and
-fast JavaScript. and I'm not used to Coq at all, so don't hesitate to send PR if
-you can write better example code!
+BuckleScript, Rollup, Terser, and Closure Compiler to generate safe and fast
+JavaScript. and I'm not used to Coq at all, so don't hesitate to send PR if you
+can write better example code!
 
 ## Prerequirements
 
@@ -30,7 +30,7 @@ OCaml Code
   v
 Optimized JavaScript Code
   |
-  | (Use Rollup, Lebab, Terser, Closure Compiler)
+  | (Use Rollup, Terser, Closure Compiler)
   v
 More Optimized JavaScript Code
 ```
