@@ -30,11 +30,6 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@imbsky/rollup-plugin-lebab@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@imbsky/rollup-plugin-lebab/-/rollup-plugin-lebab-1.0.1.tgz#048c1142dd5c07a83f476e1d543f2202ef80ca07"
-  integrity sha512-AKIP7aacoLwV5cqMuhMZxOtvqviIf1vajT9eKmOtLQPBjMazqoa/ite7GKfZh6vbEVSDXltSGjRCHeTrnPe/Nw==
-
 "@types/estree@*":
   version "0.0.39"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
