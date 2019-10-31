@@ -50,7 +50,7 @@ More Optimized JavaScript Code
     └── sigma.mli
 ```
 
-# Build Instructions
+## Build Instructions
 
 ```bash
 # Install Node.js Packages
