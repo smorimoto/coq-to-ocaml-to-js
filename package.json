@@ -13,7 +13,7 @@
     "rollup:clean": "rimraf --glob javascript/*.js",
     "rollup:build": "rollup -c",
     "clean": "npm-run-all -p *:clean",
-    "build": "npm-run-all -s *:build size"
+    "build": "npm-run-all -s *:build"
   },
   "devDependencies": {
     "@ampproject/rollup-plugin-closure-compiler": "0.12.0",

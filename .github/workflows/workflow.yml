@@ -19,13 +19,34 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install yarn and esy
-        run: npm install -g yarn esy
+      - name: Restore yarn cache
+        uses: actions/cache@preview
+        id: yarn
+        with:
+          path: node_modules
+          # prettier-ignore
+          key: ${{ runner.os }}-yarn-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+
+      - name: Restore esy cache
+        uses: actions/cache@preview
+        id: esy
+        with:
+          path: ~/.esy
+          # prettier-ignore
+          key: ${{ runner.os }}-esy-${{ hashFiles(format('{0}{1}', github.workspace, '/esy.lock/index.json')) }}
+
+      - name: Install yarn
+        run: npm install -g yarn
+
+      - name: Install esy
+        run: npm install -g esy
 
       - name: Install Node.js Packages
+        if: steps.yarn.outputs.cache-hit != 'true'
         run: yarn install --frozen-lockfile
 
       - name: Install and Build OCaml Packages
+        if: steps.esy.outputs.cache-hit != 'true'
         run: esy
 
       - name: Cleanup Everything
