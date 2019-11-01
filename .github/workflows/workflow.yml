@@ -38,21 +38,21 @@ jobs:
       - name: Install esy
         run: npm install --global esy
 
-      - name: Install Node.js Packages
+      - name: Install Node.js packages
         if: steps.yarn.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
 
-      - name: Install and Build OCaml Packages
+      - name: Install and build OCaml packages
         if: steps.esy.outputs.cache-hit != 'true'
         run: esy
 
-      - name: Cleanup Everything
+      - name: Cleanup
         run: yarn clean
 
-      - name: Extracting to OCaml
+      - name: Extract to OCaml
         run: |
           cd ocaml
           esy coqc ../coq/*.v
 
-      - name: Compiling OCaml to JavaScript
+      - name: Compile OCaml to JavaScript
         run: yarn build

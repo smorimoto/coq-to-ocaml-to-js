@@ -53,18 +53,18 @@ More Optimized JavaScript Code
 ## Build Instructions
 
 ```bash
-# Install Node.js Packages
+# Install Node.js packages
 yarn
 
-# Install and Build OCaml Packages
+# Install and build OCaml packages
 esy
 
-# Cleanup Everything
+# Cleanup
 yarn clean
 
-# Extracting to OCaml
+# Extract to OCaml
 cd ocaml && esy coqc ../coq/*.v && cd -
 
-# Compiling OCaml to JavaScript
+# Compile OCaml to JavaScript
 yarn build
 ```
