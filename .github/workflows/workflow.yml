@@ -36,7 +36,7 @@ jobs:
           key: ${{ runner.os }}-esy-${{ hashFiles(format('{0}{1}', github.workspace, '/esy.lock/index.json')) }}
 
       - name: Install esy
-        run: yarn global add esy
+        run: npm install --global esy
 
       - name: Install Node.js Packages
         if: steps.yarn.outputs.cache-hit != 'true'
