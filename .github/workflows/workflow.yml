@@ -20,7 +20,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Restore yarn cache
-        uses: actions/cache@preview
+        uses: actions/cache@v1
         id: yarn
         with:
           path: node_modules
@@ -28,7 +28,7 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
 
       - name: Restore esy cache
-        uses: actions/cache@preview
+        uses: actions/cache@v1
         id: esy
         with:
           path: ~/.esy
