@@ -16,8 +16,8 @@ Homebrew.)
 
 #### Yarn, esy
 
-Although not strictly required, we recommend it to get consistent installs
-across machines.
+Although if you're an expert in Node.js and/or the OCaml ecosystem, not strictly
+required, we recommend it to get consistent installs across machines.
 
 ### Getting the source
 
