@@ -59,6 +59,20 @@ let rec sigma = function
           | S _ -> fun o -> Obj.magic sigma n0 (add (Obj.magic m) o))
 ```
 
+`sigma.mli`
+
+```ocaml
+type __ = Obj.t
+
+type nat = O | S of nat
+
+val add : nat -> nat -> nat
+
+type f = __
+
+val sigma : nat -> f
+```
+
 `sigma.js`
 
 ```javascript
