@@ -49,10 +49,5 @@ jobs:
       - name: Cleanup
         run: yarn clean
 
-      - name: Extract to OCaml
-        run: |
-          cd ocaml
-          esy coqc ../coq/*.v
-
-      - name: Compile OCaml to JavaScript
-        run: yarn build
+      - name: Extract Coq to OCaml, and compile OCaml to JavaScript
+        run: make build

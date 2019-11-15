@@ -33,4 +33,4 @@ Definition sigma: forall n, f n.
   exact (m+o).
 Defined.
 
-Extraction "sigma.ml" sigma.
+Extraction "ocaml/sigma.ml" sigma.

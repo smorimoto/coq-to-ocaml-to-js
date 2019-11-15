@@ -35,16 +35,8 @@ yarn
 esy
 ```
 
-You can extract Coq code to OCaml code with
+You can extract Coq to OCaml, and compile OCaml to JavaScript with
 
 ```bash
-cd ocaml
-esy coqc ../coq/*.v
-cd -
-```
-
-You can compile OCaml code to JavaScript code with
-
-```bash
-yarn build
+make build
 ```
