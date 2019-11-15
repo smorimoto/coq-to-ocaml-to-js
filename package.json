@@ -29,7 +29,7 @@
   },
   "bundlesize": [
     {
-      "path": "dist/*.js",
+      "path": "javascript/*.js",
       "compression": "none"
     }
   ]
