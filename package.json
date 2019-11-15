@@ -6,12 +6,12 @@
   "license": "Apache-2.0",
   "private": true,
   "scripts": {
-    "size": "bundlesize --config bundlesize.config.json",
+    "size": "bundlesize",
     "coq:clean": "rimraf --glob ocaml/*.{ml,mli}",
     "bsb:clean": "bsb -clean-world",
     "bsb:build": "bsb -make-world",
     "rollup:clean": "rimraf --glob javascript/*.js",
-    "rollup:build": "rollup -c",
+    "rollup:build": "rollup --config rollup.config.ts",
     "clean": "npm-run-all -p *:clean",
     "build": "npm-run-all -s *:build"
   },
@@ -24,6 +24,13 @@
     "prettier": "1.19.1",
     "rimraf": "3.0.0",
     "rollup": "1.27.0",
-    "rollup-plugin-terser": "5.1.2"
-  }
+    "rollup-plugin-terser": "5.1.2",
+    "typescript": "3.7.2"
+  },
+  "bundlesize": [
+    {
+      "path": "dist/*.js",
+      "compression": "none"
+    }
+  ]
 }
