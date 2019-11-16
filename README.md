@@ -30,7 +30,7 @@ extracted to OCaml, and that BuckleScript will generate safe and clean
 JavaScript. Here is the workflow of code generation and the code that is
 generate when you execute the `make build` command in this repository.
 
-### Workflow
+### Workflow and directory structure
 
 ```text
 Coq Code
