@@ -1,5 +1,3 @@
-# esy
 esy.lock/
-
-# Build output
 javascript/
+lib/
