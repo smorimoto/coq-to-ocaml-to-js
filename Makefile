@@ -1,4 +1,4 @@
 build:
 	yarn clean
-	esy coqc coq/*.v
+	esy coqc theories/*.v
 	yarn build

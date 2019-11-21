@@ -11,9 +11,6 @@ This repository is nothing more than a proof of concept using Coq's Extraction,
 BuckleScript, Rollup, Terser, and Closure Compiler to generate safe and fast
 JavaScript.
 
-Coq and BuckleScript aren't very well known in Web development field. So I quote
-a brief introduction.
-
 ### What is Coq
 
 > Coq is a proof assistant. It means that it is designed to develop mathematical
@@ -29,11 +26,6 @@ a brief introduction.
 > and typed language, and makes it compile to clean, readable and performant
 > JavaScript code. -
 > [What is BuckleScript?](https://bucklescript.github.io/docs/en/what-why)
-
-It sounds great, doesn't it? I guess you still don't believe that Coq can be
-extracted to OCaml, and that BuckleScript will generate safe and clean
-JavaScript. Here is the workflow of code generation and the code that is
-generate when you execute the `make build` command in this repository.
 
 ### Workflow and directory structure
 
@@ -51,21 +43,6 @@ Optimized JavaScript Code
   | (Use Rollup, Terser, Closure Compiler)
   v
 More Optimized JavaScript Code
-```
-
-```text
-.
-├── coq
-│   └── sigma.v
-├── javascript
-│   └── sigma.js
-├── lib
-│   └── es6
-│       └── ocaml
-│           └── sigma.js
-└── ocaml
-    ├── sigma.ml
-    └── sigma.mli
 ```
 
 ### Source code
