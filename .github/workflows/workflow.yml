@@ -21,17 +21,19 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Get yarn cache directory
+        id: yarn
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
       - name: Restore yarn cache
         uses: actions/cache@v1
-        id: yarn
         with:
-          path: node_modules
+          path: ${{ steps.yarn.outputs.dir }}
           # prettier-ignore
           key: ${{ runner.os }}-yarn-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
 
       - name: Restore esy cache
         uses: actions/cache@v1
-        id: esy
         with:
           path: ~/.esy
           # prettier-ignore
@@ -40,12 +42,10 @@ jobs:
       - name: Install esy
         run: npm install --global esy
 
-      - name: Install Node.js packages
-        if: steps.yarn.outputs.cache-hit != 'true'
+      - name: Install packages
         run: yarn --frozen-lockfile
 
       - name: Install and build OCaml packages
-        if: steps.esy.outputs.cache-hit != 'true'
         run: esy
 
       - name: Cleanup
