@@ -5,6 +5,7 @@
   "author": "BSKY <me@bsky.moe>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@opam/coq": "8.10.1"
+    "@opam/coq": "8.10.1",
+    "ocaml": "4.09.0"
   }
 }
