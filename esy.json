@@ -6,6 +6,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@opam/coq": "8.10.1",
-    "ocaml": "4.09.0"
+    "@opam/merlin": "3.3.2",
+    "ocaml": "4.8.1000"
   }
 }
