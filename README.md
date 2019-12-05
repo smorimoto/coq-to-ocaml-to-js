@@ -73,19 +73,26 @@ Defined.
 ```ocaml
 type __ = Obj.t
 
-type nat = O | S of nat
+type nat =
+  | O
+  | S of nat
 
-let rec add n m = match n with O -> m | S p -> S (add p m)
+let rec add n m =
+  match n with
+  | O -> m
+  | S p -> S (add p m)
+;;
 
 type f = __
 
 let rec sigma = function
   | O -> Obj.magic O
   | S n0 ->
-      Obj.magic (fun m ->
-          match n0 with
-          | O -> m
-          | S _ -> fun o -> Obj.magic sigma n0 (add (Obj.magic m) o))
+    Obj.magic (fun m ->
+        match n0 with
+        | O -> m
+        | S _ -> fun o -> Obj.magic sigma n0 (add (Obj.magic m) o))
+;;
 ```
 
 `sigma.mli`
@@ -93,7 +100,9 @@ let rec sigma = function
 ```ocaml
 type __ = Obj.t
 
-type nat = O | S of nat
+type nat =
+  | O
+  | S of nat
 
 val add : nat -> nat -> nat
 
