@@ -1,5 +1,5 @@
 {
-  "checksum": "f8ce297e17976bb8f8cd3b9efb9cfac2",
+  "checksum": "2c4f0ad7713b4bb24e6f1b616cae952e",
   "root": "coq-to-ocaml-to-js@link-dev:./esy.json",
   "node": {
     "ocaml@4.9.0@d41d8cd9": {
@@ -24,7 +24,7 @@
       "overrides": [],
       "dependencies": [
         "ocaml@4.9.0@d41d8cd9", "@opam/merlin@opam:3.3.3@d653b06a",
-        "@opam/coq@opam:8.10.1@e04e5c77"
+        "@opam/coq@opam:8.10.2@316d6a60"
       ],
       "devDependencies": []
     },
@@ -220,20 +220,20 @@
         "@opam/base-unix@opam:base@87d0b2eb"
       ]
     },
-    "@opam/coq@opam:8.10.1@e04e5c77": {
-      "id": "@opam/coq@opam:8.10.1@e04e5c77",
+    "@opam/coq@opam:8.10.2@316d6a60": {
+      "id": "@opam/coq@opam:8.10.2@316d6a60",
       "name": "@opam/coq",
-      "version": "opam:8.10.1",
+      "version": "opam:8.10.2",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://opam.ocaml.org/cache/sha512/5c/5c6a20e283c351a4b0ecdb393fb77cfc9b72b474453c99c95f52a70da47dd72fff7229c2ef92d61aadade8f2ed6e03c1a7740d0fa2fcc87ea72659f95eceb2dc#sha512:5c6a20e283c351a4b0ecdb393fb77cfc9b72b474453c99c95f52a70da47dd72fff7229c2ef92d61aadade8f2ed6e03c1a7740d0fa2fcc87ea72659f95eceb2dc",
-          "archive:https://github.com/coq/coq/archive/V8.10.1.tar.gz#sha512:5c6a20e283c351a4b0ecdb393fb77cfc9b72b474453c99c95f52a70da47dd72fff7229c2ef92d61aadade8f2ed6e03c1a7740d0fa2fcc87ea72659f95eceb2dc"
+          "archive:https://opam.ocaml.org/cache/sha512/80/80df91b64efc9907480388ec479362ee21067c64436da720989d6d1645ffc2f2230ae5c13069c55842da3baa7facbd143c2190d1d64d8c87935802000a02156f#sha512:80df91b64efc9907480388ec479362ee21067c64436da720989d6d1645ffc2f2230ae5c13069c55842da3baa7facbd143c2190d1d64d8c87935802000a02156f",
+          "archive:https://github.com/coq/coq/archive/V8.10.2.tar.gz#sha512:80df91b64efc9907480388ec479362ee21067c64436da720989d6d1645ffc2f2230ae5c13069c55842da3baa7facbd143c2190d1d64d8c87935802000a02156f"
         ],
         "opam": {
           "name": "coq",
-          "version": "8.10.1",
-          "path": "esy.lock/opam/coq.8.10.1"
+          "version": "8.10.2",
+          "path": "esy.lock/opam/coq.8.10.2"
         }
       },
       "overrides": [],
