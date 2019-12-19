@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ampproject/rollup-plugin-closure-compiler@0.13.0":
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/@ampproject/rollup-plugin-closure-compiler/-/rollup-plugin-closure-compiler-0.13.0.tgz#23083ada1e5f899280c38acbf22454616ccc78a8"
-  integrity sha512-uvbNj/ngTZxHZM7y1RLC+hQ1qUZ9JH0BVdVmcAWRH6U/25ek18V/r+ks9VKmkzRfn8Oe9nY4XmXHJozfQGVOIQ==
+"@ampproject/rollup-plugin-closure-compiler@0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@ampproject/rollup-plugin-closure-compiler/-/rollup-plugin-closure-compiler-0.14.0.tgz#810021240219b99871884fe1608a0ba182b3229e"
+  integrity sha512-Fnise4Toxm3JiCiGi+MXKgIQzhKp5UTGIq+ITp4O9pIwUa2duv1FwaYxjhc22M90KfIsOx8Oajlj31qsH7+swg==
   dependencies:
     acorn "7.1.0"
     acorn-dynamic-import "4.0.0"
