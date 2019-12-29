@@ -41,8 +41,5 @@ jobs:
       - name: Install and build OCaml packages
         run: esy
 
-      - name: Cleanup
-        run: yarn clean
-
       - name: Extract Coq to OCaml, and compile OCaml to JavaScript
         run: make build
