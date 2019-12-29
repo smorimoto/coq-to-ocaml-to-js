@@ -4,9 +4,16 @@
   "repository": "https://github.com/imbsky/coq-to-ocaml-to-js",
   "author": "BSKY <me@bsky.moe>",
   "license": "Apache-2.0",
+  "esy": {
+    "build": "dune build --root . --profile release --ignore-promoted-rules --no-config",
+    "buildsInSource": "_build"
+  },
   "dependencies": {
     "@opam/coq": "8.10.2",
-    "@opam/merlin": "3.3.3",
-    "ocaml": "4.09.0"
+    "@opam/dune": "2.0.1",
+    "ocaml": "4.08.1000"
+  },
+  "devDependencies": {
+    "@opam/merlin": "3.3.3"
   }
 }

@@ -1,4 +1,5 @@
 build:
+	esy dune clean
 	yarn clean
-	esy coqc theories/*.v
+	esy build
 	yarn build

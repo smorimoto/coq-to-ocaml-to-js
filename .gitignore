@@ -1,11 +1,8 @@
+_build/
 _esy/
-_release/
 dist/
 lib/
 node_modules/
 
-*.aux
-*.glob
 *.install
-*.vo
 .merlin
