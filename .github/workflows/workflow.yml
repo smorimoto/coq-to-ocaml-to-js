@@ -45,10 +45,10 @@ jobs:
       - name: Install esy
         run: npm install --global esy
 
-      - name: Install packages
+      - name: Install npm packages
         run: yarn --frozen-lockfile
 
-      - name: Install and build OCaml packages
+      - name: Install and build opam packages
         run: esy
 
       - name: Extract Coq to OCaml, and compile OCaml to JavaScript
