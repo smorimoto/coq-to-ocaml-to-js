@@ -21,12 +21,20 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Restore esy cache
+        uses: actions/cache@v1.1.0
+        id: esy
+        with:
+          path: ~/.esy
+          # prettier-ignore
+          key: ${{ runner.os }}-esy-${{ hashFiles(format('{0}{1}', github.workspace, '/esy.lock/index.json')) }}
+
       - name: Get yarn cache directory
         id: yarn
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: Restore yarn cache
-        uses: actions/cache@v1.0.3
+        uses: actions/cache@v1.1.0
         with:
           path: ${{ steps.yarn.outputs.dir }}
           # prettier-ignore
