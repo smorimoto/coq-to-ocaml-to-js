@@ -29,7 +29,7 @@ JavaScript.
 
 ### Workflow and directory structure
 
-```text
+```
 Coq Code
   |
   | (Use Coq Compiler)
