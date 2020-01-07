@@ -8,11 +8,12 @@ jobs:
   build:
     if: github.repository == 'imbsky/coq-to-ocaml-to-js'
 
-    runs-on: ubuntu-latest
-
     strategy:
       matrix:
+        os: [macOS-latest, ubuntu-latest]
         node-version: [13.x]
+
+    runs-on: ${{ matrix.os }}
 
     steps:
       - name: Checkout code
