@@ -26,7 +26,7 @@ homepage: "https://github.com/ocaml/dune"
 doc: "https://dune.readthedocs.io/"
 bug-reports: "https://github.com/ocaml/dune/issues"
 depends: [
-  ("ocaml" {>= "4.06"} | ("ocaml" {< "4.06~~"} & "ocamlfind-secondary"))
+  "ocaml" {>= "4.07"}
   "base-unix"
   "base-threads"
 ]
@@ -43,9 +43,9 @@ build: [
   ["./dune.exe" "build" "-p" name "--profile" "dune-bootstrap" "-j" jobs]
 ]
 url {
-  src: "https://github.com/ocaml/dune/releases/download/2.0.1/dune-2.0.1.tbz"
+  src: "https://github.com/ocaml/dune/releases/download/2.1.1/dune-2.1.1.tbz"
   checksum: [
-    "sha256=e04090c846f005f1cc02c390e963a7efe74c653ce2c5c7fd2e7e30a06ceadcb7"
-    "sha512=8c973ccfa1de0ff7173e17dac74ea850446a057866d47c7a100b271c7e440d5e607f1bfaa8fa5b756e0439492276e8c6615fac30cbff9ea900dc8e891f7ba4d3"
+    "sha256=b14417016fa0901c0b04b8474aa9e5eafaadb298c4dc422899b7f9e8bcb7aa7c"
+    "sha512=605019ed9555ae669fd3e27518637a7e31e5935d4b0db54d6b066e0e1d11ef163b57eacec50f1f061baa808548c2b9017b8b1c44e3e78e50bbf27a572408e18f"
   ]
 }
