@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@opam/coq": "8.10.2",
-    "@opam/dune": "2.1.1",
+    "@opam/dune": "2.1.2",
     "ocaml": "4.08.1000"
   },
   "devDependencies": {
