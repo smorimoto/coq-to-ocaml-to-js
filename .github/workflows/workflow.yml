@@ -13,7 +13,9 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
-        node-version: [13.x]
+
+    env:
+      node-version: 13.x
 
     runs-on: ${{ matrix.os }}
 
@@ -21,10 +23,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2.0.0
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js ${{ env.node-version }}
         uses: actions/setup-node@v1.3.0
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: ${{ env.node-version }}
 
       - name: Restore esy cache
         uses: actions/cache@v1.1.0
