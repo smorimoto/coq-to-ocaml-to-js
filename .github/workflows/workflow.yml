@@ -35,6 +35,8 @@ jobs:
           path: ~/.esy
           # prettier-ignore
           key: ${{ runner.os }}-esy-${{ hashFiles(format('{0}{1}', github.workspace, '/esy.lock/index.json')) }}
+          restore-keys: |
+            ${{ runner.os }}-esy-
 
       - name: Get yarn cache directory
         id: yarn
@@ -46,6 +48,8 @@ jobs:
           path: ${{ steps.yarn.outputs.dir }}
           # prettier-ignore
           key: ${{ runner.os }}-yarn-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
       - name: Install esy
         run: npm install --global esy
