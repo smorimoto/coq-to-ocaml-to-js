@@ -8,14 +8,15 @@ on:
 
 jobs:
   build:
-    if: github.repository == 'imbsky/coq-to-ocaml-to-js'
-
     strategy:
+      fail-fast: false
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
-
-    env:
-      node-version: 13.x
+        os:
+          - macos-latest
+          - ubuntu-latest
+          - windows-latest
+        node-version:
+          - 13.x
 
     runs-on: ${{ matrix.os }}
 
@@ -23,18 +24,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2.0.0
 
-      - name: Use Node.js ${{ env.node-version }}
-        uses: actions/setup-node@v1.4.0
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1.4.1
         with:
-          node-version: ${{ env.node-version }}
+          node-version: ${{ matrix.node-version }}
 
       - name: Restore esy cache
         uses: actions/cache@v1.1.2
         id: esy
         with:
           path: ~/.esy
-          # prettier-ignore
-          key: ${{ runner.os }}-esy-${{ hashFiles(format('{0}{1}', github.workspace, '/esy.lock/index.json')) }}
+          key: ${{ runner.os }}-esy-${{ hashFiles('esy.lock/index.json') }}
           restore-keys: |
             ${{ runner.os }}-esy-
 
@@ -46,8 +46,7 @@ jobs:
         uses: actions/cache@v1.1.2
         with:
           path: ${{ steps.yarn.outputs.dir }}
-          # prettier-ignore
-          key: ${{ runner.os }}-yarn-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
 
