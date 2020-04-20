@@ -3,7 +3,7 @@ name: Main workflow
 on:
   push:
     branches:
-      - "master"
+      - master
   pull_request:
 
 jobs:
@@ -22,15 +22,15 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2.1.0
+        uses: actions/checkout@v2
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1.4.1
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
 
       - name: Restore esy cache
-        uses: actions/cache@v1.1.2
+        uses: actions/cache@v1
         id: esy
         with:
           path: ~/.esy
@@ -43,7 +43,7 @@ jobs:
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: Restore yarn cache
-        uses: actions/cache@v1.1.2
+        uses: actions/cache@v1
         with:
           path: ${{ steps.yarn.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
