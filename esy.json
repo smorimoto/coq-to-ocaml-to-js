@@ -2,22 +2,19 @@
   "name": "coq-to-ocaml-to-js",
   "version": "0.1.0",
   "repository": "https://github.com/imbsky/coq-to-ocaml-to-js",
-  "author": "BSKY <me@bsky.moe>",
+  "author": "Sora Morimoto <sora@morimoto.io>",
   "license": "Apache-2.0",
   "esy": {
     "build": "dune build --root . --profile release --ignore-promoted-rules --no-config",
     "buildsInSource": "_build"
   },
   "dependencies": {
-    "@opam/coq": "8.11.0",
-    "@opam/dune": "2.4.0",
-    "ocaml": "4.9.0"
+    "@opam/coq": "8.15.2",
+    "@opam/dune": "3.4.1",
+    "ocaml": "4.14.0"
   },
   "devDependencies": {
     "@opam/ocaml-lsp-server": "*",
-    "@opam/ocamlformat": "0.13.0"
-  },
-  "resolutions": {
-    "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam#62f5c11"
+    "@opam/ocamlformat": "0.24.1"
   }
 }

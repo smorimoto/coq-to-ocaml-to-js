@@ -1,0 +1,587 @@
+#!/bin/bash
+# Command environment
+
+#
+# Built-in
+#
+export ESY__ROOT_PACKAGE_CONFIG_PATH="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/esy.json"
+export npm_config_version_git_tag='true'
+export NIX_PROFILES='/nix/var/nix/profiles/default /Users/smorimoto/.nix-profile'
+export YARN_WRAP_OUTPUT='false'
+export NODE='/nix/store/gk4w1h5cfhlkir820lzc7bns32yi6qp7-nodejs-16.15.0/bin/node'
+export CAML_LD_LIBRARY_PATH='/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/node_modules/esy/3/i/esy-7d7e29d3/stublibs:/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/node_modules/esy/3/i/esy-7d7e29d3/lib/stublibs:/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_opam/lib/stublibs:/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_opam/lib/ocaml/stublibs:/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_opam/lib/ocaml'
+export npm_package_description='[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/imbsky/coq-to-ocaml-to-js/Main%20workflow?style=flat-square)](https://github.com/imbsky/coq-to-ocaml-to-js/actions) [![GitHub package.json version](https://img.shields.io/github/package-json/v/imbsky/coq-to-ocaml-to-js?style=flat-square)](https://github.com/imbsky/coq-to-ocaml-to-js/blob/master/package.json) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub](https://img.shields.io/github/license/imbsky/coq-to-ocaml-to-js?color=brightgreen&style=flat-square)](https://github.com/imbsky/coq-to-ocaml-to-js/blob/master/LICENSE)'
+export LOGNAME='smorimoto'
+export SHLVL='2'
+export npm_config_email='sora@morimoto.io'
+export npm_config_version_git_sign=''
+export npm_package_devDependencies_typescript='4.0.3'
+export npm_config_argv='{"remain":[],"cooked":["run","esy"],"original":["esy"]}'
+export _='/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/node_modules/esy/3/i/esy-7d7e29d3/bin/esy'
+export OPAM_SWITCH_PREFIX='/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_opam'
+export __CFBundleIdentifier='com.googlecode.iterm2'
+export npm_config_strict_ssl='true'
+export COLORFGBG='15;0'
+export HOME='/Users/smorimoto'
+export npm_config_user_agent='yarn/1.22.19 npm/? node/v16.15.0 darwin arm64'
+export npm_package_private='true'
+export npm_package_scripts_rollup_build='rollup --config rollup.config.ts'
+export npm_config_init_license='MIT'
+export NIXPKGS_ALLOW_BROKEN='1'
+export LC_CTYPE='UTF-8'
+export npm_package_devDependencies_prettier='2.1.2'
+export npm_config_ignore_engines='true'
+export __CF_USER_TEXT_ENCODING='0x1F5:0x0:0x2'
+export npm_package_repository_type='git'
+export npm_package_scripts_build='npm-run-all -s *:build'
+export TERM_PROGRAM_VERSION='3.4.16'
+export npm_node_execpath='/nix/store/gk4w1h5cfhlkir820lzc7bns32yi6qp7-nodejs-16.15.0/bin/node'
+export SHELL='/Users/smorimoto/.nix-profile/bin/fish'
+export npm_package_name='coq-to-ocaml-to-js'
+export PWD='/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js'
+export SSH_AUTH_SOCK='/private/tmp/com.apple.launchd.r1wL2HLYEe/Listeners'
+export TERM_PROGRAM='iTerm.app'
+export npm_package_bundlesize_0_compression='none'
+export npm_package_scripts_rollup_clean='rimraf --glob dist/*.js'
+export DISPLAY='/private/tmp/com.apple.launchd.AgcBPuafHA/org.xquartz:0'
+export npm_config_bin_links='true'
+export npm_config__github_registry='https://npm.pkg.github.com'
+export npm_config_init_version='1.0.0'
+export npm_config_save_prefix='^'
+export INIT_CWD='/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js'
+export USER='smorimoto'
+export DUNE_CACHE_TRANSPORT='direct'
+export PATH='/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/node_modules/esy/3/i/esy-7d7e29d3/bin:/var/folders/9b/w4_1kfln6hj3x9jsv173nhkr0000gn/T/yarn--1659884728543-0.10656075929900943:/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/node_modules/.bin:/Users/smorimoto/.config/yarn/link/node_modules/.bin:/Users/smorimoto/.yarn/bin:/nix/store/gk4w1h5cfhlkir820lzc7bns32yi6qp7-nodejs-16.15.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/nix/store/gk4w1h5cfhlkir820lzc7bns32yi6qp7-nodejs-16.15.0/lib/node_modules/npm/bin/node-gyp-bin:/nix/store/gk4w1h5cfhlkir820lzc7bns32yi6qp7-nodejs-16.15.0/bin/node_modules/npm/bin/node-gyp-bin:/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_opam/bin:/Users/smorimoto/.cargo/bin:/Users/smorimoto/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Apple/usr/bin:/nix/store/7cqy069dksh0aqymg59lasxr407pr74n-aspcud-1.9.5/bin:/nix/store/5hjsjaxvw0ja7i41hy9446p07wsl2k6c-unzip-6.0/bin:/nix/store/k55fin69p8szl9mx49m8c6asn12phlqz-curl-7.83.1-bin/bin:/nix/store/nyz8jc47x7k0lkbvxbcjkdv2rk0hmdwy-getconf-system_cmds-550.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+export npm_lifecycle_event='esy'
+export OCAMLPATH='/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/node_modules/esy/3/i/esy-7d7e29d3/lib:'
+export npm_config_registry='https://registry.yarnpkg.com'
+export npm_package_scripts_size='bundlesize'
+export LC_TERMINAL='iTerm2'
+export npm_package_devDependencies_rimraf='3.0.2'
+export npm_package_repository_url='https://github.com/smorimoto/coq-to-ocaml-to-js'
+export XPC_FLAGS='0x0'
+export npm_package_devDependencies_npm_run_all='4.1.5'
+export MAN_PATH='/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/node_modules/esy/3/i/esy-7d7e29d3/man:'
+export npm_package_readmeFilename='README.md'
+export npm_package_scripts_bsb_clean='bsb -clean-world'
+export npm_package_author_name='Sora Morimoto'
+export OPAMNOENVNOTICE='true'
+export npm_config_version_tag_prefix='v'
+export npm_package_devDependencies_rollup_plugin_terser='7.0.2'
+export ITERM_PROFILE='Default'
+export VIRTUAL_ENV_DISABLE_PROMPT='1'
+export GHQ_SELECTOR='peco'
+export npm_package_scripts_bsb_build='bsb -make-world'
+export OCAML_TOPLEVEL_PATH='/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_opam/lib/toplevel'
+export COMMAND_MODE='unix2003'
+export EDITOR='nano'
+export NIX_SSL_CERT_FILE='/nix/var/nix/profiles/default/etc/ssl/certs/ca-bundle.crt'
+export npm_package_devDependencies_rollup='2.28.2'
+export COLORTERM='truecolor'
+export npm_package_author_email='sora@morimoto.io'
+export npm_package_scripts_clean='npm-run-all -p *:clean'
+export npm_package_devDependencies__ampproject_rollup_plugin_closure_compiler='0.26.0'
+export npm_execpath='/nix/store/910m323bgij7q63skcvc9faqv3rnrbfv-yarn-1.22.19/libexec/yarn/bin/yarn.js'
+export LC_TERMINAL_VERSION='3.4.16'
+export npm_package_devDependencies_bs_platform='8.2.0'
+export npm_config_version_git_message='v%s'
+export npm_config_version_commit_hooks='true'
+export npm_config_username='smorimoto'
+export npm_package_version='0.1.0'
+export ITERM_SESSION_ID='w0t1p0:B627347D-3CD9-467E-8A02-882603D9AAF1'
+export npm_config_ignore_scripts=''
+export npm_package_bundlesize_0_path='dist/*.js'
+export npm_package_devDependencies_esy='0.6.12'
+export TERM_SESSION_ID='w0t1p0:B627347D-3CD9-467E-8A02-882603D9AAF1'
+export TERM='xterm-256color'
+export npm_package_devDependencies_bundlesize='0.18.0'
+export DUNE_CACHE='enabled'
+export npm_config_ignore_optional=''
+export TMPDIR='/var/folders/9b/w4_1kfln6hj3x9jsv173nhkr0000gn/T/'
+export XPC_SERVICE_NAME='0'
+export npm_package_license='Apache-2.0'
+export SHELL='/Users/smorimoto/.nix-profile/bin/fish'
+export PATH="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_esy/default/bin:$PATH"
+export cur__etc="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_esy/default/store/i/coq_to_ocaml_to_js-6a4fdf1a/etc"
+export cur__share="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_esy/default/store/i/coq_to_ocaml_to_js-6a4fdf1a/share"
+export cur__toplevel="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_esy/default/store/i/coq_to_ocaml_to_js-6a4fdf1a/toplevel"
+export cur__stublibs="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_esy/default/store/i/coq_to_ocaml_to_js-6a4fdf1a/stublibs"
+export cur__doc="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_esy/default/store/i/coq_to_ocaml_to_js-6a4fdf1a/doc"
+export cur__man="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_esy/default/store/i/coq_to_ocaml_to_js-6a4fdf1a/man"
+export cur__lib="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_esy/default/store/i/coq_to_ocaml_to_js-6a4fdf1a/lib"
+export cur__sbin="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_esy/default/store/i/coq_to_ocaml_to_js-6a4fdf1a/sbin"
+export cur__bin="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_esy/default/store/i/coq_to_ocaml_to_js-6a4fdf1a/bin"
+export cur__install="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_esy/default/store/i/coq_to_ocaml_to_js-6a4fdf1a"
+export cur__target_dir="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_esy/default/store/b/coq_to_ocaml_to_js-6a4fdf1a"
+export cur__original_root="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js"
+export cur__root="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js"
+export cur__dev="true"
+export cur__version="0.1.0"
+export cur__name="coq-to-ocaml-to-js"
+
+#
+# esy-gmp@archive:https://gmplib.org/download/gmp/gmp-6.2.1.tar.xz#sha1:0578d48607ec0e272177d175fd1807c30b00fdf2@d3dc108f
+#
+export CPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/esy_gmp-f843d617/include:$CPATH"
+export CPPFLAGS="-I/Users/smorimoto/.esy/3______________________________________________________________/i/esy_gmp-f843d617/include"
+export LDFLAGS="-L/Users/smorimoto/.esy/3______________________________________________________________/i/esy_gmp-f843d617/lib -lgmp"
+export LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/esy_gmp-f843d617/lib:$LD_LIBRARY_PATH"
+export LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/esy_gmp-f843d617/lib:$LIBRARY_PATH"
+export PKG_CONFIG_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/esy_gmp-f843d617/lib/pkgconfig:$PKG_CONFIG_PATH"
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/esy_gmp-f843d617/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/esy_gmp-f843d617/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/esy_gmp-f843d617/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/esy_gmp-f843d617/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/esy_gmp-f843d617/bin:$PATH"
+
+#
+# @opam/uucp@opam:14.0.0@8715110e
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__uucp-opam__c__14.0.0-0096d184/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__uucp-opam__c__14.0.0-0096d184/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__uucp-opam__c__14.0.0-0096d184/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__uucp-opam__c__14.0.0-0096d184/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__uucp-opam__c__14.0.0-0096d184/bin:$PATH"
+
+#
+# @opam/result@opam:1.5@1c6a6533
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__result-opam__c__1.5-b3bb628d/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__result-opam__c__1.5-b3bb628d/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__result-opam__c__1.5-b3bb628d/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__result-opam__c__1.5-b3bb628d/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__result-opam__c__1.5-b3bb628d/bin:$PATH"
+
+#
+# @opam/camlp-streams@opam:5.0.1@daaa0f94
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__camlp_streams-opam__c__5.0.1-fa35fc30/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__camlp_streams-opam__c__5.0.1-fa35fc30/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__camlp_streams-opam__c__5.0.1-fa35fc30/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__camlp_streams-opam__c__5.0.1-fa35fc30/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__camlp_streams-opam__c__5.0.1-fa35fc30/bin:$PATH"
+
+#
+# @opam/astring@opam:0.8.5@1300cee8
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__astring-opam__c__0.8.5-abcd5380/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__astring-opam__c__0.8.5-abcd5380/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__astring-opam__c__0.8.5-abcd5380/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__astring-opam__c__0.8.5-abcd5380/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__astring-opam__c__0.8.5-abcd5380/bin:$PATH"
+
+#
+# @opam/sexplib0@opam:v0.15.1@51111c0c
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__sexplib0-opam__c__v0.15.1-5c662f82/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__sexplib0-opam__c__v0.15.1-5c662f82/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__sexplib0-opam__c__v0.15.1-5c662f82/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__sexplib0-opam__c__v0.15.1-5c662f82/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__sexplib0-opam__c__v0.15.1-5c662f82/bin:$PATH"
+
+#
+# @opam/dune-configurator@opam:3.4.1@a34e7553
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune_configurator-opam__c__3.4.1-d516d95a/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune_configurator-opam__c__3.4.1-d516d95a/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune_configurator-opam__c__3.4.1-d516d95a/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune_configurator-opam__c__3.4.1-d516d95a/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune_configurator-opam__c__3.4.1-d516d95a/bin:$PATH"
+
+#
+# @opam/cppo@opam:1.6.9@db929a12
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__cppo-opam__c__1.6.9-021e7432/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__cppo-opam__c__1.6.9-021e7432/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__cppo-opam__c__1.6.9-021e7432/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__cppo-opam__c__1.6.9-021e7432/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__cppo-opam__c__1.6.9-021e7432/bin:$PATH"
+
+#
+# @opam/topkg@opam:1.0.5@0aa59f51
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__topkg-opam__c__1.0.5-bec8ae4d/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__topkg-opam__c__1.0.5-bec8ae4d/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__topkg-opam__c__1.0.5-bec8ae4d/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__topkg-opam__c__1.0.5-bec8ae4d/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__topkg-opam__c__1.0.5-bec8ae4d/bin:$PATH"
+
+#
+# @opam/ocamlbuild@opam:0.14.1@ead10f40
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlbuild-opam__c__0.14.1-0a90b4d3/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlbuild-opam__c__0.14.1-0a90b4d3/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlbuild-opam__c__0.14.1-0a90b4d3/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlbuild-opam__c__0.14.1-0a90b4d3/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlbuild-opam__c__0.14.1-0a90b4d3/bin:$PATH"
+
+#
+# @opam/seq@opam:base@d8d7de1d
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__seq-opam__c__base-07a1babf/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__seq-opam__c__base-07a1babf/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__seq-opam__c__base-07a1babf/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__seq-opam__c__base-07a1babf/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__seq-opam__c__base-07a1babf/bin:$PATH"
+
+#
+# @opam/base-bytes@opam:base@19d0c2ff
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_bytes-opam__c__base-95402887/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_bytes-opam__c__base-95402887/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_bytes-opam__c__base-95402887/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_bytes-opam__c__base-95402887/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_bytes-opam__c__base-95402887/bin:$PATH"
+
+#
+# @opam/base-bigarray@opam:base@b03491b0
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_bigarray-opam__c__base-09972a63/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_bigarray-opam__c__base-09972a63/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_bigarray-opam__c__base-09972a63/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_bigarray-opam__c__base-09972a63/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_bigarray-opam__c__base-09972a63/bin:$PATH"
+
+#
+# @opam/conf-gmp@opam:4@c394e8f1
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__conf_gmp-opam__c__4-3a639d49/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__conf_gmp-opam__c__4-3a639d49/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__conf_gmp-opam__c__4-3a639d49/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__conf_gmp-opam__c__4-3a639d49/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__conf_gmp-opam__c__4-3a639d49/bin:$PATH"
+
+#
+# @opam/uuseg@opam:14.0.0@7d21466b
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__uuseg-opam__c__14.0.0-d2c65527/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__uuseg-opam__c__14.0.0-d2c65527/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__uuseg-opam__c__14.0.0-d2c65527/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__uuseg-opam__c__14.0.0-d2c65527/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__uuseg-opam__c__14.0.0-d2c65527/bin:$PATH"
+
+#
+# @opam/stdio@opam:v0.15.0@aeefdf96
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__stdio-opam__c__v0.15.0-8c7f723a/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__stdio-opam__c__v0.15.0-8c7f723a/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__stdio-opam__c__v0.15.0-8c7f723a/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__stdio-opam__c__v0.15.0-8c7f723a/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__stdio-opam__c__v0.15.0-8c7f723a/bin:$PATH"
+
+#
+# @opam/odoc-parser@opam:2.0.0@a08011a0
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__odoc_parser-opam__c__2.0.0-11d31874/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__odoc_parser-opam__c__2.0.0-11d31874/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__odoc_parser-opam__c__2.0.0-11d31874/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__odoc_parser-opam__c__2.0.0-11d31874/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__odoc_parser-opam__c__2.0.0-11d31874/bin:$PATH"
+
+#
+# @opam/ocp-indent@opam:1.8.1@e32a3c50
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocp_indent-opam__c__1.8.1-4aac1b82/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocp_indent-opam__c__1.8.1-4aac1b82/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocp_indent-opam__c__1.8.1-4aac1b82/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocp_indent-opam__c__1.8.1-4aac1b82/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocp_indent-opam__c__1.8.1-4aac1b82/bin:$PATH"
+
+#
+# @opam/ocaml-version@opam:3.5.0@6bef55f5
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocaml_version-opam__c__3.5.0-82f42c6f/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocaml_version-opam__c__3.5.0-82f42c6f/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocaml_version-opam__c__3.5.0-82f42c6f/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocaml_version-opam__c__3.5.0-82f42c6f/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocaml_version-opam__c__3.5.0-82f42c6f/bin:$PATH"
+
+#
+# @opam/menhirSdk@opam:20220210@b8921e41
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__menhirsdk-opam__c__20220210-f319ba50/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__menhirsdk-opam__c__20220210-f319ba50/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__menhirsdk-opam__c__20220210-f319ba50/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__menhirsdk-opam__c__20220210-f319ba50/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__menhirsdk-opam__c__20220210-f319ba50/bin:$PATH"
+
+#
+# @opam/menhirLib@opam:20220210@e6562f4f
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__menhirlib-opam__c__20220210-30e961f5/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__menhirlib-opam__c__20220210-30e961f5/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__menhirlib-opam__c__20220210-30e961f5/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__menhirlib-opam__c__20220210-30e961f5/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__menhirlib-opam__c__20220210-30e961f5/bin:$PATH"
+
+#
+# @opam/menhir@opam:20220210@ff87a93b
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__menhir-opam__c__20220210-2deecbb9/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__menhir-opam__c__20220210-2deecbb9/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__menhir-opam__c__20220210-2deecbb9/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__menhir-opam__c__20220210-2deecbb9/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__menhir-opam__c__20220210-2deecbb9/bin:$PATH"
+
+#
+# @opam/fpath@opam:0.7.3@674d8125
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__fpath-opam__c__0.7.3-027b4cf7/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__fpath-opam__c__0.7.3-027b4cf7/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__fpath-opam__c__0.7.3-027b4cf7/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__fpath-opam__c__0.7.3-027b4cf7/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__fpath-opam__c__0.7.3-027b4cf7/bin:$PATH"
+
+#
+# @opam/fix@opam:20220121@17b9a1a4
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__fix-opam__c__20220121-4f68b717/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__fix-opam__c__20220121-4f68b717/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__fix-opam__c__20220121-4f68b717/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__fix-opam__c__20220121-4f68b717/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__fix-opam__c__20220121-4f68b717/bin:$PATH"
+
+#
+# @opam/either@opam:1.0.0@be5a1416
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__either-opam__c__1.0.0-14c582a7/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__either-opam__c__1.0.0-14c582a7/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__either-opam__c__1.0.0-14c582a7/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__either-opam__c__1.0.0-14c582a7/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__either-opam__c__1.0.0-14c582a7/bin:$PATH"
+
+#
+# @opam/cmdliner@opam:1.1.1@03763729
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__cmdliner-opam__c__1.1.1-020a2e31/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__cmdliner-opam__c__1.1.1-020a2e31/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__cmdliner-opam__c__1.1.1-020a2e31/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__cmdliner-opam__c__1.1.1-020a2e31/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__cmdliner-opam__c__1.1.1-020a2e31/bin:$PATH"
+
+#
+# @opam/base@opam:v0.15.0@85d52a98
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base-opam__c__v0.15.0-63e035a7/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base-opam__c__v0.15.0-63e035a7/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base-opam__c__v0.15.0-63e035a7/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base-opam__c__v0.15.0-63e035a7/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base-opam__c__v0.15.0-63e035a7/bin:$PATH"
+
+#
+# @opam/yojson@opam:2.0.1@bf37404a
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__yojson-opam__c__2.0.1-49f8b076/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__yojson-opam__c__2.0.1-49f8b076/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__yojson-opam__c__2.0.1-49f8b076/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__yojson-opam__c__2.0.1-49f8b076/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__yojson-opam__c__2.0.1-49f8b076/bin:$PATH"
+
+#
+# @opam/xdg@opam:3.4.1@c8939e21
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__xdg-opam__c__3.4.1-1afdaa00/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__xdg-opam__c__3.4.1-1afdaa00/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__xdg-opam__c__3.4.1-1afdaa00/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__xdg-opam__c__3.4.1-1afdaa00/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__xdg-opam__c__3.4.1-1afdaa00/bin:$PATH"
+
+#
+# @opam/uutf@opam:1.0.3@47c95a18
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__uutf-opam__c__1.0.3-3f8f726c/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__uutf-opam__c__1.0.3-3f8f726c/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__uutf-opam__c__1.0.3-3f8f726c/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__uutf-opam__c__1.0.3-3f8f726c/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__uutf-opam__c__1.0.3-3f8f726c/bin:$PATH"
+
+#
+# @opam/stdune@opam:3.4.1@7f6c026f
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__stdune-opam__c__3.4.1-a9903616/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__stdune-opam__c__3.4.1-a9903616/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__stdune-opam__c__3.4.1-a9903616/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__stdune-opam__c__3.4.1-a9903616/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__stdune-opam__c__3.4.1-a9903616/bin:$PATH"
+
+#
+# @opam/spawn@opam:v0.15.1@85e9d6f1
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__spawn-opam__c__v0.15.1-dc7e5aa9/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__spawn-opam__c__v0.15.1-dc7e5aa9/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__spawn-opam__c__v0.15.1-dc7e5aa9/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__spawn-opam__c__v0.15.1-dc7e5aa9/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__spawn-opam__c__v0.15.1-dc7e5aa9/bin:$PATH"
+
+#
+# @opam/re@opam:1.10.4@c4910ba6
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__re-opam__c__1.10.4-ca89bc39/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__re-opam__c__1.10.4-ca89bc39/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__re-opam__c__1.10.4-ca89bc39/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__re-opam__c__1.10.4-ca89bc39/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__re-opam__c__1.10.4-ca89bc39/bin:$PATH"
+
+#
+# @opam/ppx_yojson_conv_lib@opam:v0.15.0@773058a7
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ppx__yojson__conv__lib-opam__c__v0.15.0-200c6ce5/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ppx__yojson__conv__lib-opam__c__v0.15.0-200c6ce5/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ppx__yojson__conv__lib-opam__c__v0.15.0-200c6ce5/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ppx__yojson__conv__lib-opam__c__v0.15.0-200c6ce5/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ppx__yojson__conv__lib-opam__c__v0.15.0-200c6ce5/bin:$PATH"
+
+#
+# @opam/pp@opam:1.1.2@89ad03b5
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__pp-opam__c__1.1.2-2f8a14d7/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__pp-opam__c__1.1.2-2f8a14d7/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__pp-opam__c__1.1.2-2f8a14d7/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__pp-opam__c__1.1.2-2f8a14d7/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__pp-opam__c__1.1.2-2f8a14d7/bin:$PATH"
+
+#
+# @opam/ordering@opam:3.4.1@15998879
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ordering-opam__c__3.4.1-4fa2e65f/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ordering-opam__c__3.4.1-4fa2e65f/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ordering-opam__c__3.4.1-4fa2e65f/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ordering-opam__c__3.4.1-4fa2e65f/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ordering-opam__c__3.4.1-4fa2e65f/bin:$PATH"
+
+#
+# @opam/omd@opam:1.3.2@511d53d2
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__omd-opam__c__1.3.2-860ba406/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__omd-opam__c__1.3.2-860ba406/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__omd-opam__c__1.3.2-860ba406/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__omd-opam__c__1.3.2-860ba406/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__omd-opam__c__1.3.2-860ba406/bin:$PATH"
+
+#
+# @opam/octavius@opam:1.2.2@2205cc65
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__octavius-opam__c__1.2.2-376efad3/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__octavius-opam__c__1.2.2-376efad3/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__octavius-opam__c__1.2.2-376efad3/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__octavius-opam__c__1.2.2-376efad3/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__octavius-opam__c__1.2.2-376efad3/bin:$PATH"
+
+#
+# @opam/ocamlformat-rpc-lib@opam:0.24.1@4b5db4b3
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlformat_rpc_lib-opam__c__0.24.1-9680f1ec/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlformat_rpc_lib-opam__c__0.24.1-9680f1ec/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlformat_rpc_lib-opam__c__0.24.1-9680f1ec/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlformat_rpc_lib-opam__c__0.24.1-9680f1ec/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlformat_rpc_lib-opam__c__0.24.1-9680f1ec/bin:$PATH"
+
+#
+# @opam/fiber@opam:3.4.1@f5bcac3c
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__fiber-opam__c__3.4.1-96751bbc/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__fiber-opam__c__3.4.1-96751bbc/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__fiber-opam__c__3.4.1-96751bbc/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__fiber-opam__c__3.4.1-96751bbc/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__fiber-opam__c__3.4.1-96751bbc/bin:$PATH"
+
+#
+# @opam/dyn@opam:3.4.1@06f14652
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dyn-opam__c__3.4.1-7acf924e/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dyn-opam__c__3.4.1-7acf924e/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dyn-opam__c__3.4.1-7acf924e/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dyn-opam__c__3.4.1-7acf924e/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dyn-opam__c__3.4.1-7acf924e/bin:$PATH"
+
+#
+# @opam/dune-rpc@opam:3.4.1@bde8651b
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune_rpc-opam__c__3.4.1-891ad822/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune_rpc-opam__c__3.4.1-891ad822/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune_rpc-opam__c__3.4.1-891ad822/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune_rpc-opam__c__3.4.1-891ad822/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune_rpc-opam__c__3.4.1-891ad822/bin:$PATH"
+
+#
+# @opam/dune-build-info@opam:3.4.1@7ac82411
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune_build_info-opam__c__3.4.1-00925970/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune_build_info-opam__c__3.4.1-00925970/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune_build_info-opam__c__3.4.1-00925970/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune_build_info-opam__c__3.4.1-00925970/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune_build_info-opam__c__3.4.1-00925970/bin:$PATH"
+
+#
+# @opam/csexp@opam:1.5.1@8a8fb3a7
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__csexp-opam__c__1.5.1-020cf001/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__csexp-opam__c__1.5.1-020cf001/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__csexp-opam__c__1.5.1-020cf001/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__csexp-opam__c__1.5.1-020cf001/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__csexp-opam__c__1.5.1-020cf001/bin:$PATH"
+
+#
+# @opam/chrome-trace@opam:3.4.1@ca1a3bb4
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__chrome_trace-opam__c__3.4.1-8b51e980/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__chrome_trace-opam__c__3.4.1-8b51e980/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__chrome_trace-opam__c__3.4.1-8b51e980/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__chrome_trace-opam__c__3.4.1-8b51e980/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__chrome_trace-opam__c__3.4.1-8b51e980/bin:$PATH"
+
+#
+# @opam/base-unix@opam:base@87d0b2eb
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_unix-opam__c__base-2a6b9323/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_unix-opam__c__base-2a6b9323/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_unix-opam__c__base-2a6b9323/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_unix-opam__c__base-2a6b9323/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_unix-opam__c__base-2a6b9323/bin:$PATH"
+
+#
+# @opam/base-threads@opam:base@36803084
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_threads-opam__c__base-78e4ca60/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_threads-opam__c__base-78e4ca60/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_threads-opam__c__base-78e4ca60/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_threads-opam__c__base-78e4ca60/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__base_threads-opam__c__base-78e4ca60/bin:$PATH"
+
+#
+# @opam/zarith@opam:1.12@232cc7f2
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__zarith-opam__c__1.12-5c3167b4/lib/zarith:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__zarith-opam__c__1.12-5c3167b4/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__zarith-opam__c__1.12-5c3167b4/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__zarith-opam__c__1.12-5c3167b4/bin:$PATH"
+
+#
+# @opam/ocamlfind@opam:1.9.5@c23112ba
+#
+export OCAML_TOPLEVEL_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.5-6492c34e/toplevel"
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.5-6492c34e/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.5-6492c34e/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.5-6492c34e/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.5-6492c34e/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlfind-opam__c__1.9.5-6492c34e/bin:$PATH"
+
+#
+# @opam/conf-findutils@opam:1@8454cd64
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__conf_findutils-opam__c__1-873dd0f6/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__conf_findutils-opam__c__1-873dd0f6/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__conf_findutils-opam__c__1-873dd0f6/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__conf_findutils-opam__c__1-873dd0f6/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__conf_findutils-opam__c__1-873dd0f6/bin:$PATH"
+
+#
+# @esy-ocaml/substs@0.0.1@d41d8cd9
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/esy_ocaml__s__substs-0.0.1-f9e9eafc/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/esy_ocaml__s__substs-0.0.1-f9e9eafc/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/esy_ocaml__s__substs-0.0.1-f9e9eafc/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/esy_ocaml__s__substs-0.0.1-f9e9eafc/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/esy_ocaml__s__substs-0.0.1-f9e9eafc/bin:$PATH"
+
+#
+# ocaml@4.14.0@d41d8cd9
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/ocaml-4.14.0-ca66ec7f/lib/ocaml/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/ocaml-4.14.0-ca66ec7f/lib/ocaml:$CAML_LD_LIBRARY_PATH"
+export OCAMLLIB="/Users/smorimoto/.esy/3______________________________________________________________/i/ocaml-4.14.0-ca66ec7f/lib/ocaml"
+export OCAML_TOPLEVEL_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/ocaml-4.14.0-ca66ec7f/lib/ocaml"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/ocaml-4.14.0-ca66ec7f/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/ocaml-4.14.0-ca66ec7f/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/ocaml-4.14.0-ca66ec7f/bin:$PATH"
+
+#
+# @opam/ocamlformat@opam:0.24.1@80ba1b34
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlformat-opam__c__0.24.1-175fb043/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlformat-opam__c__0.24.1-175fb043/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlformat-opam__c__0.24.1-175fb043/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlformat-opam__c__0.24.1-175fb043/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocamlformat-opam__c__0.24.1-175fb043/bin:$PATH"
+
+#
+# @opam/ocaml-lsp-server@opam:1.13.1@c47cf6e0
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocaml_lsp_server-opam__c__1.13.1-9ef98fff/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocaml_lsp_server-opam__c__1.13.1-9ef98fff/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocaml_lsp_server-opam__c__1.13.1-9ef98fff/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocaml_lsp_server-opam__c__1.13.1-9ef98fff/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__ocaml_lsp_server-opam__c__1.13.1-9ef98fff/bin:$PATH"
+
+#
+# @opam/dune@opam:3.4.1@84d54aea
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune-opam__c__3.4.1-4fe89cc1/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune-opam__c__3.4.1-4fe89cc1/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune-opam__c__3.4.1-4fe89cc1/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune-opam__c__3.4.1-4fe89cc1/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__dune-opam__c__3.4.1-4fe89cc1/bin:$PATH"
+
+#
+# @opam/coq@opam:8.15.2@29bcc9dc
+#
+export CAML_LD_LIBRARY_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__coq-opam__c__8.15.2-10db2a16/stublibs:/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__coq-opam__c__8.15.2-10db2a16/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__coq-opam__c__8.15.2-10db2a16/lib:$OCAMLPATH"
+export MAN_PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__coq-opam__c__8.15.2-10db2a16/man:$MAN_PATH"
+export PATH="/Users/smorimoto/.esy/3______________________________________________________________/i/opam__s__coq-opam__c__8.15.2-10db2a16/bin:$PATH"
+
+#
+# Built-in
+#
+export OCAMLFIND_LDCONF="ignore"
+export OCAMLFIND_DESTDIR="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_esy/default/store/i/coq_to_ocaml_to_js-6a4fdf1a/lib"
+export SHELL="env -i /bin/bash --norc --noprofile"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export SHELL="/Users/smorimoto/.nix-profile/bin/fish"
+exec "$@"

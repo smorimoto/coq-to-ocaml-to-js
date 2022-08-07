@@ -1,0 +1,4 @@
+#!/bin/sh
+export ESY__NODE_BIN_PATH="/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_esy/default/bin"
+exec "/private/var/folders/9b/w4_1kfln6hj3x9jsv173nhkr0000gn/T/yarn--1659884728543-0.10656075929900943/node" -r "/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/_esy/default/pnp.js" "$@"
+              
