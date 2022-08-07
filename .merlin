@@ -1,0 +1,8 @@
+####{BSB GENERATED: NO EDIT
+FLG -ppx '/Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/node_modules/rescript/darwin/bsc.exe -as-ppx '
+S /Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/node_modules/rescript/lib/ocaml
+B /Users/smorimoto/src/github.com/smorimoto/coq-to-ocaml-to-js/node_modules/rescript/lib/ocaml
+FLG -w +a-4-9-20-40-41-42-50-61-102
+S _build/default/theories
+B lib/bs/_build/default/theories
+####BSB GENERATED: NO EDIT}

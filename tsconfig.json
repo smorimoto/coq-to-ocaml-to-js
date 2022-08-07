@@ -9,6 +9,5 @@
     "noUnusedParameters": true,
     "strict": true
   },
-  "exclude": ["_build", "dist", "node_modules"],
-  "include": ["src"]
+  "exclude": ["_build", "dist", "node_modules"]
 }

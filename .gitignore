@@ -1,8 +1,5 @@
-_build/
-_esy/
-dist/
-lib/
-node_modules/
-
-*.install
-.merlin
+/_build/
+/_opam/
+/dist/
+/lib/
+/node_modules/

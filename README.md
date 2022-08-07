@@ -72,12 +72,15 @@ Defined.
 
 ```ocaml
 type __ = Obj.t
-
 type nat = O | S of nat
+
+(** val add : nat -> nat -> nat **)
 
 let rec add n m = match n with O -> m | S p -> S (add p m)
 
 type f = __
+
+(** val sigma : nat -> f **)
 
 let rec sigma = function
   | O -> Obj.magic O
@@ -92,7 +95,6 @@ let rec sigma = function
 
 ```ocaml
 type __ = Obj.t
-
 type nat = O | S of nat
 
 val add : nat -> nat -> nat
@@ -105,31 +107,32 @@ val sigma : nat -> f
 `sigma.js`
 
 ```javascript
-import * as Curry from "bs-platform/lib/es6/curry.js";
+import * as Curry from "rescript/lib/es6/curry.js";
 
 function add(n, m) {
   if (n) {
-    return [add(n[0], m)];
+    return /* S */ {
+      _0: add(n._0, m),
+    };
   } else {
     return m;
   }
 }
 
-function sigma(param) {
-  if (param) {
-    var n0 = param[0];
-    return function(m) {
-      if (n0) {
-        return function(o) {
-          return Curry._1(sigma(n0), add(m, o));
-        };
-      } else {
-        return m;
-      }
-    };
-  } else {
-    return 0;
+function sigma(n0) {
+  if (!n0) {
+    return /* O */ 0;
   }
+  var n0$1 = n0._0;
+  return function (m) {
+    if (n0$1) {
+      return function (o) {
+        return Curry._1(sigma(n0$1), add(m, o));
+      };
+    } else {
+      return m;
+    }
+  };
 }
 
 export { add, sigma };
